@@ -1,0 +1,843 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="author" content="Reynaldo Soto">
+<meta name="description" content="Proyecto acerca de apuntes de clase">
+<meta name="date" content="2 de diciembre 2025">
+        
+<link rel="shortcut icon" href="multimedia/logo.jpeg" type="image/icon" />
+        
+<link rel="stylesheet" href="style.css" />
+
+<title>Proyecto Plataformas Operativas</title>
+
+<style>
+.contenedor {
+        display: flex;
+    }
+.text1 {
+    padding-right: 30px;
+}
+.text2 {
+    padding-left: 30px;
+}
+</style>
+
+</head>
+<body>
+
+<HEADER>
+    <div style="text-align: center;">
+<h1>Proyecto: Plataformas operativas</h1>
+</div>
+
+<NAV class="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="objetivo.html">Objetivo del programa</a>
+    <a href="referencias.html">Referencias</a>
+</NAV>
+
+<div style="margin-top: 100px;">
+<div style="text-align: center;">
+    <img
+    src="Eslogan.jpg"
+    width="1280px" height="720px" alt="Eslogan.">
+</div>
+</div>
+</HEADER>
+
+<SECTION1>
+    <div style="margin-top: 77px;">
+    <h2>¡Bienvenido!</h2>
+    <div style="margin-bottom: 25px;"></div>
+</div>
+    <ARTICLE1>
+        <div class="contenedor">
+        <p class="text1">Esta página fue creada con el objetivo de ayudarte a entender, de forma clara y sencilla, los temas más importantes que vimos en la materia de Plataformas Operativas.<br>
+        </br>Aquí encontrarás explicaciones detalladas, ejemplos prácticos y conceptos fundamentales, presentados de una manera amigable, directa y fácil de comprender. Incluso si nunca has visto estos temas antes, puedas avanzar paso a paso y sentirte confiado en lo que estás aprendiendo.<br>
+        </br>Mi objetivo es que esta página sea tu guía útil para comprender cómo funcionan las plataformas operativas, desde lo más básico hasta lo más avanzado, sin que te sientas abrumado. ¡Gracias por visitar el sitio y disfruta tu aprendizaje!</p>
+        </div>
+<div style="margin-top: 100px;"></div>
+    </ARTICLE1>
+</SECTION1>
+
+<SECTION2>
+    <h3>Modelo de Von Neumann</h3>
+    <div style="margin-bottom: 25px;"></div>
+    <ARTICLE2>
+        <div class="contenedor">
+        <img src="principal2.jpg" width="1000px" height="1205px" alt="Integrantes de la banda.">
+        <p class="text2">Antes de sumergirnos en el sistema operativo, es importante conocer un poco sobre los modelos, en nuestro caso el modelo de Von Neumann.<br>
+        <strong></br>¿Qué es el Modelo de Von Neumann?</strong>
+        </br>El modelo de von Neumann es una arquitectura de computadoras que describe cómo debe estar organizada una computadora para poder ejecutar programas.
+        Propone que una computadora debe tener una memoria única donde se almacenen tanto datos como instrucciones, y que las instrucciones se ejecuten de manera secuencial (una tras otra).
+        
+        Este modelo es la base de prácticamente todas las computadoras modernas.<br><br>
+        Fue propuesto alrededor de 1945, durante el desarrollo de las primeras computadoras electrónicas por el matemático John von Neumann, aunque se basó en el trabajo conjunto con otros científicos que participaban en el proyecto de la computadora EDVAC.<br><br>
+        El modelo sirve para:<br>
+
+- Definir cómo debe estar organizada una computadora.<br>
+
+- Explicar el ciclo básico de ejecución de instrucciones.<br>
+
+- Establecer una estructura estándar para hardware y software.<br>
+
+- Ser la base de la arquitectura utilizada por computadoras, laptops, celulares y muchos dispositivos actuales.<br>
+    <strong></br>Cuello de botella</strong>
+        </br>El cuello de botella es en pocas palabras, cuando un componente u objeto limita el funcionamiento y potencial de otro. La separación de la memoria y la CPU acarreó un problema denominado Neumann bottleneck (cuello de botella de Neumann). Esto se debe a que la cantidad de datos que pasa entre estos dos elementos difiere mucho en tiempo con las velocidades de ellos.<br>
+    <strong></br>Instrucciones</strong>
+        </br>La función de una computadora es ejecutar programas, estos se encuentran en una memoria. La CPU ejecuta estos programas por un ciclo, el ciclo instrucciones. Las instrucciones consisten de secuencias de 1 y 0 (binarios) llamadas código máquina. Estas instrucciones son ejecutadas por la CPU.<br>
+        </br>Su proceso consiste en dos etapas: Leer (fetch) instrucción de memoria, y Ejecutar (execute) instrucción.<br>
+        </br>El ciclo de búsqueda trae la siguiente instrucción, y el ciclo de ejecución va a ejecutar la instrucción.<br>
+        </br>Al principio de cada ciclo, la CPU busca una instrucción en memoria. En la CPU hay un registro, llamado contador de programa (PC), que tiene la dirección de la próxima instrucción a buscar. Después, la CPU incrementa el valor contenido en PC para poder buscar la siguiente instrucción.</p>
+    </div>
+<div style="margin-top: 100px;"></div>
+    </ARTICLE2>
+</SECTION2>
+
+<section class="section-conceptos">
+    <div class="titulo-section">
+        <h4>Conceptos básicos</h4>
+    </div>
+
+    <article class="articulo-conceptos">
+        <div class="contenedor-conceptos">
+
+            <p class="text13">
+
+                <strong>• Los modelos:</strong><br>
+                Los modelos buscan simplificar la complejidad.  
+                Un modelo es un arquetipo o referencia para imitar o reproducir.  
+                Un arquetipo es un modelo original y primario en un arte u otra cosa.<br><br>
+
+                <strong>• Tipos de memoria:</strong><br>
+                - <strong>ROM:</strong> memoria de solo lectura; no guarda cambios.<br>
+                - <strong>RAM:</strong> memoria volátil de corto plazo y muy rápida.  
+                  La memoria solo almacena datos; no procesa.<br><br>
+
+                <strong>• BIOS:</strong><br>
+                La BIOS (Basic Input/Output System) es un programa que opera directamente el hardware.  
+                El sistema operativo funciona encima de la BIOS.  
+                La BIOS trabaja en bajo nivel y es el primer software que se ejecuta al encender la computadora.<br><br>
+
+                <strong>• Ruta de datos:</strong><br>
+                La RAM es la memoria de acceso aleatorio y es muy rápida.  
+                El disco duro almacena datos permanentemente.  
+                Al instalar un programa, los datos se guardan en el disco duro y su destino final es la RAM cuando se ejecuta.<br><br>
+
+                <strong>• Velocidades:</strong><br>
+                El componente más rápido es el procesador (CPU).  
+                Los dispositivos de entrada y salida son mucho más lentos que el CPU.<br><br>
+
+                <strong>• ¿Qué es un modelo en computación?</strong><br>
+                Un modelo representa componentes conectados por interfaces.  
+                Su propósito es entender, analizar o simular cómo funciona un sistema y, posteriormente, permitir reproducirlo o imitarlo.<br><br>
+
+                <strong>Elementos básicos del sistema de cómputo:</strong><br>
+                - <strong>Procesador:</strong> Unidad Aritmética-Lógica (ALU) y Unidad de Control.<br>
+                - <strong>Memoria principal:</strong> memoria volátil.<br>
+                - <strong>Módulos de E/S:</strong> dispositivos como discos, impresoras, etc.<br>
+                - <strong>Bus del sistema:</strong> comunicación entre CPU, memoria principal y módulos de E/S.<br><br>
+
+                <strong>Esquema del sistema de cómputo:</strong><br>
+                El sistema de cómputo puede representarse como una arquitectura en capas.<br><br>
+
+                <strong>El Bus:</strong><br>
+                El Bus conecta los componentes.  
+                Ejemplo: si el profesor habla español y yo chino, no podríamos comunicarnos.  
+                Pero si hay una interfaz (alguien que traduce ambos idiomas), la comunicación se logra.  
+                Eso hace un bus: conectar sistemas con lenguajes diferentes.<br><br>
+
+                <strong>Firmware:</strong><br>
+                El firmware es un software que controla físicamente el hardware.  
+                El lenguaje máquina es el conjunto de instrucciones que entiende el procesador.  
+                El sistema operativo es la interfaz entre el usuario y la máquina, y gestiona recursos como memoria, CPU y dispositivos.<br><br>
+
+                <strong>Microarquitectura:</strong><br>
+                - Registros del CPU.<br>
+                - Unidad Aritmética-Lógica.<br><br>
+
+                <strong>Lenguaje máquina:</strong><br>
+                - Contiene típicamente cientos de instrucciones.<br>
+                - Maneja datos de los registros y la ALU.<br><br>
+
+                <strong>Hardware y lenguaje ensamblador:</strong><br>
+                - Las memorias son de lectura y escritura.<br>
+                - Registrar significa escribir algo. Los registros son memorias internas del CPU.<br>
+
+            </p>
+            <div style="margin-bottom: 25px;"></div>
+            <div class="imagen-centro">
+                <img src="principal3.png" width="900" height="685" alt="Conceptos básicos">
+            </div>
+
+        </div>
+    </article>
+</section>
+
+
+<SECTION4>
+    <div style="margin-top: 77px;"> 
+        <h5>Sistema Operativo</h5> 
+        <div style="margin-bottom: 25px;"></div>
+    </div> <ARTICLE4> 
+        <div class="contenedor">
+            <p class="text18">
+                <strong>¿Qué es el Sistema Operativo?<br></strong>
+                    Un sistema operativo (SO) se puede explicar de forma sencilla como el programa principal que controla y administra el funcionamiento de una computadora. Es el "Intermediario" entre el hardware y el usuario o los programas que usamos. Es un conjunto de programas que gestionan los recursos de hardware y permiten que otros programas funcionen correctamente. Sin el sistema operativo, la computadora solo sería un conjunto de piezas que no sabrías cómo usar.<br><br>
+    
+                    <strong>Sus funciones principales son:</strong><br>
+                    • Administrar recursos: controla el procesador, la memoria, los dispositivos de entrada/salida y el almacenamiento.<br>
+                    • Proveer una interfaz: permite que el usuario interactúe con el dispositivo, ya sea con menús gráficos (como Windows) o comandos.<br>
+                    • Ejecutar y coordinar programas: organiza qué aplicación corre, en qué momento y con qué prioridad.<br>
+                    • Seguridad: protege los datos y restringe accesos no autorizados.<br>
+                    • Ocultar al programador la complejidad inherente al control del hardware.<br>
+                </p>
+                <div style="text-align: center;"> 
+                    <img src="sistema-operativo.jpg" width="1280px" height="900px" alt="Bienvenido"> </div> </div> 
+                    <div style="margin-bottom: 50px;"></div> </div> 
+                </ARTICLE4> 
+            </SECTION4>
+
+
+
+<section class="section-sisc">
+    <div class="titulo-section">
+        <h4>Sistema de Cómputo</h4>
+    </div>
+
+    <article class="articulo-sisc">
+        <div class="contenedor-sisc">
+
+            <p class="text13">
+
+                <strong>¿Cómo funciona un sistema de cómputo?</strong><br>
+
+                <strong>• Elementos de almacenamiento:</strong><br>
+                - Contador de Programa (PC).<br>
+                - Puntero de Pila.<br>
+                - Registros.<br>
+                - Memoria principal.<br><br>
+
+                <strong>• Juego de instrucciones:</strong><br>
+                Conjunto de operaciones e instrucciones (lenguaje máquina) que puede ejecutar el sistema de cómputo.<br><br>
+
+                <strong>• Secuencia de funcionamiento:</strong><br>
+                Este término se refiere al modo en que las instrucciones se ejecutan dentro del sistema de cómputo.<br><br>
+
+                <strong>• Funcionamiento secuencial del procesador:</strong><br>
+                1. Leer la instrucción ubicada en la dirección de memoria señalada por el Contador de Programa (PC).<br>
+                2. Incrementar el Contador de Programa para apuntar a la siguiente instrucción.<br>
+                3. Ejecutar la instrucción leída.<br>
+
+                Si una instrucción no se termina, **no se puede pasar a la siguiente**.  
+                Esto garantiza que el sistema siga un flujo estricto y ordenado.<br><br>
+
+                <strong>• El Contador de Programa (PC):</strong><br>
+                El PC es un registro especial que contiene la dirección de memoria donde se encuentra la siguiente instrucción que debe ejecutar el procesador.<br><br>
+
+                <strong>• Registros:</strong><br>
+                Los registros son pequeñas memorias internas del CPU, extremadamente rápidas.  
+                Algunos registros pueden repetirse según su función dentro del procesador.<br><br>
+
+                <strong>• Memoria:</strong><br>
+                La memoria principal está organizada en posiciones numeradas (por ejemplo: 100, 101, 102…).  
+                Cada posición contiene datos o instrucciones necesarias para el sistema.<br><br>
+
+                <strong>• Función del sistema operativo:</strong><br>
+                El sistema operativo ofrece al usuario una **interfaz sencilla** para interactuar con el hardware, permitiendo gestionar memoria, procesos y dispositivos sin conocer su complejidad interna.<br>
+
+            </p>
+            <div style="margin-bottom: 25px;"></div>
+            <div class="imagen-centro">
+                <img src="primer-plano-computadora-mesa.webp" width="1000" height="700" alt="Sistema de Cómputo">
+            </div>
+
+        </div>
+    </article>
+</section>
+
+
+<section class="section-sisc">
+    <div class="titulo-section">
+        <h4>Los registros del procesador</h4>
+    </div>
+
+    <article class="articulo-sisc">
+        <div class="contenedor-sisc">
+
+            <p class="text13">
+
+                <strong>¿Qué son los registros del procesador?</strong><br>
+                Los registros del procesador son memorias de alta velocidad y poca capacidad ubicadas dentro del CPU.  
+                Permiten guardar datos temporalmente, direcciones, instrucciones y acceder rápidamente a valores muy utilizados.  
+                A diferencia de la memoria RAM, los registros son mucho más rápidos y están integrados directamente en el procesador. 
+                Los registros del procesador son pequeñas memorias que se encuentran dentro del CPU y sirven para guardar y acceder datos temporalmente, direcciones o instrucciones.<br>
+
+                Son como la "mesa de trabajo" de la CPU, donde coloca valores e instrucciones que está usando en ese momento para procesarlos rápidamente.<br><br>
+
+                <strong>• Contador de programa (PC):</strong><br>
+                Es el registro que guarda la dirección de memoria de la siguiente instrucción a ejecutar.  
+                Indica la posición actual del procesador en la secuencia del programa.<br>
+                <em>Función principal:</em> Mantener el orden de ejecución almacenando la dirección de la siguiente instrucción.<br><br>
+
+                <strong>• Registro de instrucción (IR):</strong><br>
+                Contiene la instrucción que está siendo procesada por la CPU.  
+                Almacena el código de operación (opcode) que indica qué acción debe realizarse.<br>
+                <em>Función principal:</em> Mantener la instrucción actual para ser decodificada y ejecutada por la unidad de control.<br><br>
+
+                <strong>• Puntero de pila (SP):</strong><br>
+                Es el registro que señala la posición actual en la pila de memoria, usada para almacenar datos temporales, direcciones de retorno y variables locales.
+                La dirección de pila de memoria donde se encuentra la siguiente instrucción pendiente a ejecutar.<br>
+                <em>Función principal:</em> Administrar la pila para almacenar y recuperar información temporal del programa.<br><br>
+
+                <strong>• Registro de estado:</strong><br>
+                Es el registro que almacena banderas o indicadores sobre el resultado de las operaciones y el estado del procesador.  
+                Incluye señales como cero, acarreo, negativo o desbordamiento.<br>
+                <em>Función principal:</em> Proporcionar información al procesador para tomar decisiones de control durante la ejecución del programa.<br><br>
+
+                <strong>• Resumen de registros del procesador:</strong><br>
+                - <strong>PC (Program Counter):</strong> Indica la dirección de la siguiente instrucción.<br>
+                - <strong>SP (Stack Pointer):</strong> Gestiona la pila en memoria.<br>
+                - <strong>IR (Instruction Register):</strong> Almacena la instrucción actual.<br>
+                - <strong>Registro de estado (RE):</strong> Guarda información de las últimas operaciones y señales del sistema.<br><br>
+
+            </p>
+
+            <div style="margin-bottom: 25px;"></div>
+
+            <div class="imagen-centro">
+                <img src="hola1.jpg" width="1000" height="700" alt="Sistema de Cómputo">
+            </div>
+
+        </div>
+    </article>
+</section>
+
+
+<section class="section-sisc">
+    <div class="titulo-section">
+        <h4>Multiplexión por tiempo y espacio</h4>
+    </div>
+
+    <article class="articulo-sisc">
+        <div class="contenedor-sisc">
+
+            <p class="text13">
+
+                <strong>¿Qué es la multiplexión?</strong><br>
+                La multiplexión es una técnica fundamental en telecomunicaciones y transmisión de datos que permite compartir un mismo medio físico entre múltiples señales o usuarios.  
+                Su propósito es aumentar la eficiencia del sistema y reducir costos, evitando la creación de canales independientes para cada comunicación.<br><br>
+
+                En lugar de tener un canal por usuario, un solo canal se divide en recursos como tiempo, frecuencia, espacio o código.  
+                En este apartado se estudian dos tipos principales:<br><br>
+
+                <strong>• Multiplexión por Tiempo (TDM, Time Division Multiplexing)</strong><br>
+                La multiplexión por división de tiempo asigna intervalos de tiempo a diferentes señales dentro del mismo canal.  
+                Cada usuario transmite en su propio turno, repetido cíclicamente a gran velocidad.<br><br>
+
+                <strong>Funcionamiento del TDM:</strong><br>
+                - El canal se divide en ranuras de tiempo (time slots).<br>
+                - Cada ranura corresponde a un usuario o señal específica.<br>
+                - Si existen 4 usuarios, transmiten en este orden: Usuario 1 → Usuario 2 → Usuario 3 → Usuario 4 → y vuelve al Usuario 1.<br>
+                - El ciclo es tan rápido que el usuario no percibe retraso.<br><br>
+
+                <strong>Variantes de TDM:</strong><br>
+                - <strong>TDM síncrona:</strong> Cada usuario recibe una ranura fija aunque no tenga datos, lo que puede desperdiciar capacidad.<br>
+                - <strong>TDM estadístico o asíncrono:</strong> Las ranuras se asignan solo a quienes tienen datos, aumentando la eficiencia.<br><br>
+
+                <strong>Ejemplos de uso del TDM:</strong><br>
+                - Telefonía digital<br>
+                - Redes SDH / SONET<br>
+                - Radio digital y televisión digital<br><br>
+
+                <strong>• Multiplexión por Espacio (SDM, Space Division Multiplexing)</strong><br>
+                La multiplexión por división espacial asigna a cada usuario un camino físico distinto dentro del mismo medio de transmisión.  
+                Cada señal viaja por rutas separadas, ya sea en cableado o en sistemas inalámbricos.<br><br>
+
+                <strong>Funcionamiento del SDM:</strong><br>
+                La separación de señales se logra mediante el espacio físico, por ejemplo:<br>
+                - En cableado: múltiples pares de cobre, fibras ópticas paralelas o rutas independientes.<br>
+                - En sistemas inalámbricos: uso de antenas múltiples y tecnología MIMO para enviar flujos en direcciones espaciales distintas.<br>
+                - En satélites: antenas direccionales que cubren diferentes zonas geográficas.<br><br>
+
+                <strong>Ejemplos de uso del SDM:</strong><br>
+                - Cableado multipar telefónico<br>
+                - Fibra óptica multinúcleo<br>
+                - Redes 4G y 5G con MIMO<br>
+                - Satélites de comunicaciones<br><br>
+
+            </p>
+
+            <div style="margin-bottom: 25px;"></div>
+
+            <div class="imagen-centro">
+                <img src="hola2.jpg" width="800" height="500" alt="Multiplexión por tiempo y espacio">
+            </div>
+
+        </div>
+    </article>
+</section>
+
+
+<section class="section-sisc">
+    <div class="titulo-section">
+        <h4>Procesador (CPU)</h4>
+    </div>
+
+    <article class="articulo-sisc">
+        <div class="contenedor-sisc">
+
+            <p class="text13">
+
+                <strong>¿Qué es el procesador?</strong><br>
+                El procesador, también llamado Unidad Central de Procesamiento (CPU), es el componente encargado de ejecutar las instrucciones de un programa.  
+                Cada procesador trabaja con un repertorio de instrucciones específicas conocido como lenguaje máquina.<br><br>
+
+                Su función principal es tomar instrucciones desde la memoria, interpretarlas y ejecutarlas.  
+                Para ello utiliza registros internos que sirven para almacenar temporalmente variables y datos necesarios para el procesamiento.<br><br>
+
+                <strong>• Funciones principales del procesador:</strong><br>
+                - Leer de memoria las instrucciones del programa.<br>
+                - Interpretar cada instrucción leída.<br>
+                - Leer datos de memoria referenciados por la instrucción.<br>
+                - Ejecutar cada instrucción.<br>
+                - Almacenar el resultado de la instrucción ejecutada.<br><br>
+
+                El procesador trabaja con memoria porque es mucho más rápida que el disco duro.  
+                Además, utiliza memoria caché integrada en el propio CPU, la cual contiene copias de datos de la memoria principal para acelerar el acceso.<br>
+                El objetivo de la caché es reducir el tiempo de acceso y optimizar el rendimiento.<br><br>
+
+                <strong>• El reloj del procesador:</strong><br>
+                En un sistema de cómputo, el reloj cumple tres funciones importantes:<br>
+                - Determinar el ritmo de ejecución de instrucciones de máquina.<br>
+                - Generar interrupciones periódicas.<br>
+                - Mantener la fecha y la hora.<br><br>
+
+                El oscilador del reloj define las fases de ejecución de las instrucciones.  
+                Medir la velocidad del procesador en Hertz (Hz) significa contar los ciclos por segundo.  
+                <br><br>
+
+                - Un Hertz (Hz) significa "una vez por segundo".<br>  
+                - Un GHz tiene mil millones de Hertz.<br>
+                - Un disco duro es un sistema mecánico.<br>
+                - Una memoria RAM es un sistema electrónico.<br>
+                - El procesador toma las instrucciones primero de la caché, luego de la RAM si es que hay caché, porque es más rápido.<br>
+                - Todo esto lo hace el sistema operativo.<br>  
+                <br>
+
+
+                El procesador obtiene instrucciones primero desde la memoria caché (la más rápida), y si no están allí, las obtiene de la memoria RAM.  
+                Este proceso es administrado por el sistema operativo.<br><br>
+
+                <strong>Ejemplo:</strong><br>
+                Un microprocesador a 800 MHz genera una onda cuadrada de esa misma frecuencia.  
+                El sistema divide esta señal para generar interrupciones periódicas llamadas “ticks de reloj”, evitando que un programa monopolice el uso de la CPU.<br><br>
+
+                <strong>• Ejecución de una instrucción:</strong><br>
+                La ejecución consta de dos pasos:<br>
+                1. El procesador lee (busca) la instrucción en memoria, una a la vez.<br>
+                2. El procesador ejecuta la instrucción.<br><br>
+
+                <strong>Búsqueda de la siguiente instrucción:</strong><br>
+                - El procesador obtiene la instrucción desde la memoria.<br>
+                - El Contador de Programa (PC) guarda la dirección de la siguiente instrucción a ejecutar.<br>
+                - Después de cada instrucción, el PC se incrementa automáticamente.<br><br>
+
+                <strong>Registro de Instrucción (IR):</strong><br>
+                La instrucción leída se coloca en el Registro de Instrucción (IR), desde donde será decodificada y procesada.<br><br>
+
+                <strong>Categorías de instrucciones:</strong><br>
+                - <strong>Procesador–Memoria:</strong> Transferencia de datos entre CPU y memoria.<br>
+                - <strong>Procesador–E/S:</strong> Envío o recepción de datos hacia/desde dispositivos periféricos.<br>
+                - <strong>Procesamiento de Datos:</strong> Operaciones aritméticas o lógicas sobre los datos.<br>
+                - <strong>Control:</strong> Manejo de la secuencia de ejecución del programa.<br><br>
+
+            </p>
+
+            <div style="margin-bottom: 25px;"></div>
+
+            <div class="imagen-centro">
+                <img src="hola3.webp" width="1000" height="700" alt="Procesador CPU">
+            </div>
+
+        </div>
+    </article>
+</section>
+
+
+<section class="section-sisc">
+    <div class="titulo-section">
+        <h4>Tick de procesamiento</h4>
+    </div>
+
+    <article class="articulo-sisc">
+        <div class="contenedor-sisc">
+
+            <p class="text13">
+
+                <strong>¿Qué es un tick de procesamiento?</strong><br>
+                Un tick de procesamiento es la unidad mínima de tiempo o trabajo utilizada para medir y coordinar la ejecución de programas dentro del procesador.  
+                Cada tick representa lo que el CPU hace en ese instante: ejecutar una instrucción o realizar tareas internas del sistema operativo.<br>
+
+                En la tabla vista en clase, cada cuadro amarillo representa una instrucción ejecutada durante un tick, mientras que los cuadros blancos representan momentos donde ocurre un cambio de contexto o tiempo “perdido”, ya que el CPU no ejecuta trabajo útil de un proceso.<br>
+
+                Cuando el CPU ejecuta una instrucción, se incrementa el contador de ticks.  
+                Si ocurre un cambio de contexto, esos ticks se usan para guardar y restaurar estados, actualizar estructuras internas y preparar al procesador para ejecutar otro programa.<br>
+
+                Toda la tabla representa la capacidad del procesador en una ventana de tiempo: muestra qué hace el CPU tick a tick, ya sea ejecutar instrucciones de los procesos A, B o C, o realizar sobrecarga del sistema.<br><br>
+
+                <strong>• Rol del sistema operativo:</strong><br>
+                El sistema operativo decide qué cuadros amarillos pertenecen a cada proceso, a través del algoritmo de planificación (scheduler).  
+                Este algoritmo determina qué proceso se ejecuta en la CPU y en qué momento dentro de los ticks disponibles.<br><br>
+
+                <strong>• Funciones principales de los ticks:</strong><br>
+                - Medir el paso del tiempo y la cantidad de trabajo realizado por la CPU.<br>
+                - Permitir la interrupción periódica de procesos para repartir el tiempo del procesador (time-sharing).<br>
+                - Activar el scheduler mediante una interrupción de temporizador (timer) para decidir si cambiar o mantener el proceso actual.<br><br>
+
+                <strong>• Cambio de contexto:</strong><br>
+                Cuando el sistema operativo cambia del programa A al programa B, debe realizar varias acciones:<br>
+                - Guardar el estado del proceso A (registros, PC, pila y tablas).<br>
+                - Cargar el estado del proceso B.<br>
+                - Actualizar estructuras internas del kernel (colas, estadísticas, administración de procesos).<br>
+
+                Este procedimiento requiere tiempo de CPU.  
+                Los ticks que no ejecutan trabajo útil de los procesos se consideran sobrecarga del sistema.<br><br>
+
+                <strong>• Métricas importantes:</strong><br>
+                - <strong>Utilización de CPU:</strong> (Número de cuadros amarillos) / (Total de cuadros). Una alta cantidad de cuadros blancos indica baja eficiencia.<br>
+                - <strong>Throughput:</strong> Procesos completados por unidad de tiempo (ticks).<br>
+                - <strong>Turnaround time:</strong> Tiempo total desde que un proceso llega hasta que termina, medido en ticks.<br>
+                - <strong>Waiting time:</strong> Ticks en los que un proceso estuvo listo, pero no ejecutándose en CPU.<br>
+                - <strong>Overhead por cambio de contexto:</strong> Número de cuadros blancos consumidos en realizar los cambios de proceso.<br><br>
+
+            </p>
+
+            <div style="margin-bottom: 25px;"></div>
+
+            <div class="imagen-centro">
+                <img src="hola4.jpg" width="1000" height="700" alt="Tick de procesamiento">
+            </div>
+
+        </div>
+    </article>
+</section>
+
+
+<section class="section-sisc">
+    <div class="titulo-section">
+        <h4>Pasos del ciclo de ejecución de una instrucción</h4>
+    </div>
+
+    <article class="articulo-sisc">
+        <div class="contenedor-sisc">
+
+            <p class="text13">
+
+                <strong>¿Qué es el ciclo de instrucción?</strong><br>
+                El ciclo de instrucción es el proceso mediante el cual la CPU (Unidad Central de Procesamiento) 
+                lee y ejecuta una instrucción de un programa.<br>
+
+                Cada instrucción (como sumar, mover datos o comparar valores) debe pasar por este ciclo 
+                para que la CPU pueda procesarla.<br>
+
+                Es el conjunto de pasos que la computadora realiza repetidamente para ejecutar instrucciones.<br><br>
+
+                <strong>• Partes principales del ciclo de instrucción:</strong><br>
+
+                <strong>1. Fetch (Búsqueda o Captura de instrucción):</strong><br>
+                - La CPU obtiene la instrucción desde la memoria principal (RAM).<br>
+                - El Contador de Programa (PC) indica la dirección donde está la siguiente instrucción.<br>
+                - La instrucción se carga en el Registro de Instrucción (IR).<br>
+                - El PC se incrementa para apuntar a la próxima instrucción.<br><br>
+
+                <strong>2. Decode (Decodificación):</strong><br>
+                - La Unidad de Control interpreta la instrucción almacenada en el IR.<br>
+                - Se determina qué operación debe realizarse (suma, salto, mover datos, etc.).<br>
+                - Se identifican los operandos necesarios (registros, memoria o valores inmediatos).<br>
+                - El decodificador prepara las señales internas para activar la ALU o los módulos correspondientes.<br><br>
+
+                <strong>3. Execute (Ejecución):</strong><br>
+                - Se realiza la operación indicada por la instrucción.<br>
+                - Si es un cálculo → la ALU lo ejecuta.<br>
+                - Si implica mover datos → se transfieren valores entre memoria y registros.<br>
+                - Si es un salto → se actualiza el Contador de Programa (PC).<br>
+                - El resultado puede guardarse en registros, memoria o modificar banderas (cero, negativo, overflow).<br><br>
+
+                <strong>4. Memory Access y Write-Back (Opcional):</strong><br>
+                - Memory Access: se lee o escribe en memoria si la instrucción lo requiere.<br>
+                - Write-Back: el resultado final se almacena en el destino correspondiente (registro o memoria).<br><br>
+
+                <strong>• Importancia del ciclo de instrucción:</strong><br>
+                - Automático: permite que la CPU ejecute instrucciones sin intervención humana.<br>
+                - Eficiente: las etapas claras permiten técnicas como el pipelining.<br>
+                - Control centralizado: la Unidad de Control coordina todo el proceso.<br>
+                - Fundamental: todo dispositivo digital depende del ciclo de instrucción.<br>
+
+            </p>
+
+            <div style="margin-bottom: 25px;"></div>
+
+            <div class="imagen-centro">
+                <img src="hola5.png" width="1000" height="700" alt="Ciclo de instrucción de una CPU">
+            </div>
+
+        </div>
+    </article>
+</section>
+
+
+<section class="section-sisc">
+    <div class="titulo-section">
+        <h4>Interrupciones</h4>
+    </div>
+
+    <article class="articulo-sisc">
+        <div class="contenedor-sisc">
+
+            <p class="text13">
+
+                <strong>¿Qué es una interrupción?</strong><br>
+                Una interrupción es una señal que indica a la CPU que debe detener temporalmente 
+                lo que está haciendo para atender un evento más importante o urgente.<br>
+
+                Es un evento que altera la secuencia normal de ejecución de las instrucciones 
+                de un programa.<br>
+
+                Es importante que las interrupciones se atiendan antes de continuar con la siguiente instrucción.<br><br>
+
+                <strong>• Ejemplo simple:</strong><br>
+                Leer un libro representa la ejecución normal de un programa.  
+                Si suena el teléfono (interrupción), la lectura se pausa, atiendes la llamada (rutina de servicio) 
+                y luego regresas exactamente a la página donde te quedaste (retomar la instrucción original).<br><br>
+
+                <strong>• Etapas del ciclo de instrucción con interrupciones:</strong><br>
+
+                <strong>1.</strong> La CPU ejecuta normalmente las instrucciones del programa principal.<br>
+                <strong>2.</strong> Ocurre una interrupción (teclado, ratón, red, falla de hardware, etc.).<br>
+                <strong>3.</strong> La CPU guarda el estado actual: registros, contador de programa, etc.  
+                Esto funciona como un “marcapáginas”.<br>
+                <strong>4.</strong> La CPU salta a la Rutina de Servicio de Interrupción (ISR), 
+                un conjunto especial de instrucciones para manejar el evento.<br>
+                <strong>5.</strong> Una vez atendida la interrupción, la CPU restaura el estado guardado.<br>
+                <strong>6.</strong> La ejecución continúa exactamente donde se había detenido.<br><br>
+
+                <strong>• Procesos en segundo plano (Background Processes):</strong><br>
+                Un proceso en segundo plano es una tarea que se ejecuta dentro del sistema sin ser la actividad principal.  
+                No interrumpe lo que el usuario está haciendo y funciona silenciosamente.<br>
+
+                Son gestionados por el sistema operativo y no requieren intervención directa del usuario.<br><br>
+
+                <strong>Ejemplos:</strong><br>
+                - Sincronización automática de archivos en la nube.<br>
+                - Procesos de seguridad como antivirus.<br>
+                - Respaldos automáticos del sistema.<br><br>
+
+                <strong>• Diferencia entre interrupción y proceso en segundo plano:</strong><br>
+                - <strong>Interrupción:</strong> ocurre de repente y pausa la actividad principal.  
+                  La CPU debe atenderla de inmediato.  
+                  <em>Ejemplo:</em> suena tu teléfono mientras lees.<br>
+
+                - <strong>Proceso en segundo plano:</strong> se ejecuta mientras haces otra cosa, sin molestar.  
+                  No detiene la actividad principal.  
+                  <em>Ejemplo:</em> la cafetera prepara café mientras lees.<br>
+
+            </p>
+
+            <div style="margin-bottom: 25px;"></div>
+
+            <div class="imagen-centro">
+                <img src="hola6.png" width="1000" height="700" alt="Interrupciones en un sistema de cómputo">
+            </div>
+
+        </div>
+    </article>
+</section>
+
+
+<section class="section-sisc">
+    <div class="titulo-section">
+        <h4>Cambio de contexto</h4>
+    </div>
+
+    <article class="articulo-sisc">
+        <div class="contenedor-sisc">
+
+            <p class="text13">
+
+                <strong>¿Qué es un cambio de contexto?</strong><br>
+                Un cambio de contexto es el proceso mediante el cual el sistema operativo guarda el estado 
+                de un proceso en ejecución (registros, contador de programa, variables, etc.) y restaura 
+                el estado de otro proceso para que la CPU continúe ejecutándolo.<br>
+
+                Es la acción que realiza el sistema operativo al pausar un proceso y cargar otro nuevo.<br>
+
+                <strong>Ejemplo:</strong><br>
+                La CPU ejecuta el programa A (Word), pero el planificador decide que debe ejecutarse el programa B (Spotify).  
+                El sistema operativo guarda el estado de Word y carga el de Spotify para continuar su ejecución.<br><br>
+
+                <strong>• ¿Por qué ocurre un cambio de contexto?</strong><br>
+
+                <strong>1. Multitarea:</strong> permite que todos los programas tengan oportunidad de usar la CPU.
+                <strong>2. Interrupciones:</strong> señal externa como teclado, ratón o red puede activar el cambio.
+                <strong>3. Bloqueos:</strong> si un proceso está esperando (por ejemplo, leer un archivo), 
+                la CPU se asigna a otro proceso que sí puede trabajar.
+                <strong>4. Prioridades:</strong> un proceso de mayor prioridad puede desplazar a uno de menor prioridad.<br>
+                <br>
+                <strong>• ¿Cómo funciona el cambio de contexto?</strong><br>
+
+                <strong>1. Guardar el contexto del proceso actual:</strong><br>
+                Se almacenan los registros y el estado del proceso en su Bloque de Control de Proceso (BCP).<br>
+
+                <strong>2. Actualizar el planificador:</strong><br>
+                El sistema operativo decide cuál proceso será el siguiente en ejecutarse.<br>
+
+                <strong>3. Cargar el contexto del nuevo proceso:</strong><br>
+                Se restauran los registros, el contador de programa y la memoria del nuevo proceso.<br>
+
+                <strong>4. Reanudar ejecución:</strong><br>
+                La CPU continúa ejecutando el nuevo proceso como si nada hubiera pasado.<br><br>
+
+                <strong>• Tipos de cambios de contexto:</strong><br>
+
+                <strong>Entre procesos (Process switching):</strong><br>
+                Cambio entre programas distintos (ej. Word → Spotify).<br>
+
+                <strong>Entre hilos (Thread switching):</strong><br>
+                Cambio entre tareas internas dentro del mismo programa  
+                (ej. un navegador con varias pestañas cargando simultáneamente).<br><br>
+
+                <strong>• Diferencia entre Interrupción y Cambio de Contexto:</strong><br>
+                - <strong>Interrupción:</strong> evento o señal que pausa temporalmente la ejecución de la CPU para atender algo urgente.<br>
+                - <strong>Cambio de contexto:</strong> acción del sistema operativo para guardar el estado de un proceso y cargar otro.<br>
+
+            </p>
+
+            <div style="margin-bottom: 25px;"></div>
+
+            <div class="imagen-centro">
+                <img src="hola7.webp" width="1000" height="700" alt="Cambio de contexto en un sistema operativo">
+            </div>
+
+        </div>
+    </article>
+</section>
+
+
+<section class="section-sisc">
+    <div class="titulo-section">
+        <h4>Jerarquía de memorias</h4>
+    </div>
+
+    <article class="articulo-sisc">
+        <div class="contenedor-sisc">
+
+            <p class="text13">
+
+                <strong>¿Qué es la jerarquía de memorias?</strong><br>
+                Es la organización de distintos tipos de memorias en una computadora o procesador, ordenados por velocidad, capacidad y costo.<br>
+
+                Piensa en una escalera: las memorias rápidas, pequeñas y caras están arriba; las lentas, grandes y económicas, abajo.  
+                El sistema usa las rápidas para datos inmediatos y las lentas para almacenar el resto.<br><br>
+
+                <strong>• Niveles típicos de la jerarquía:</strong><br>
+
+                <strong>1. Registros del CPU:</strong> Memoria dentro del procesador, extremadamente rápida y pequeña (nanosegundos).<br><br>
+
+                <strong>2. Cachés:</strong><br>
+                - L1 (Nivel 1): muy rápida, pequeña (KB).<br>
+                - L2 (Nivel 2): más grande y un poco más lenta.<br>
+                - L3 (Nivel 3): aún mayor tamaño y más lenta que L2.<br><br>
+
+                <strong>3. Memoria principal (RAM/DRAM):</strong> Mucho más grande (GB) y más lenta que las cachés.<br><br>
+
+                <strong>4. Almacenamiento secundario (SSD, HDD):</strong> Terabytes, mucho más lento que la RAM.<br><br>
+
+                <strong>5. Almacenamiento terciario / remoto:</strong> Nube o discos externos, más lento y con mayor latencia.<br>
+
+                Cada nivel amortigua al siguiente: los niveles rápidos guardan copias de lo que probablemente se necesite pronto.<br><br>
+
+                <strong>• Características clave:</strong><br>
+                - Latencia: tiempo que tarda en entregar un dato.<br>
+                - Ancho de banda: cuánta información se puede mover por segundo.<br>
+                - Capacidad: espacio disponible.<br>
+                - Costo por bit: la memoria rápida es más cara.<br><br>
+
+                <strong>• Uso del CPU (Hit y Misses):</strong><br>
+                - Hit: el dato se encuentra en la memoria rápida (acceso rápido).<br>
+                - Miss: no está en la memoria rápida, se busca en niveles más lentos, lo que tarda más.<br>
+                - Los datos usados recientemente se copian a niveles rápidos para mejorar rendimiento.<br><br>
+
+                <strong>• Principios que hacen eficiente la jerarquía:</strong><br>
+                - Localidad temporal: los datos usados recientemente probablemente se usarán pronto.<br>
+                - Localidad espacial: al usar un dato, es probable que los datos cercanos también se necesiten.<br><br>
+
+                <strong>• Importancia:</strong><br>
+                - Rendimiento: la CPU es muy rápida y necesita memorias veloces.<br>
+                - Costo/eficiencia: usar solo memorias rápidas sería muy caro.<br>
+                - Consumo energético: acceder a memorias lentas consume más energía.<br>
+                - Escalabilidad: permite manejar grandes cantidades de datos sin perder rendimiento.<br><br>
+
+                <strong>• Unidades de datos:</strong><br>
+                - 1 byte = 8 bits<br>
+                - 1 KB = 1024 bytes<br>
+                - 1 MB = 1024 KB<br>
+                - 1 GB = 1024 MB<br><br>
+
+                <strong>• Diseño de la memoria:</strong><br>
+                Interrogantes clave: ¿Capacidad?, ¿Costo?, ¿Velocidad?<br><br>
+
+                <strong>• Ejemplo de rendimiento:</strong><br>
+                Suponiendo que un procesador accede a dos niveles de memoria:<br>
+                - Nivel 1: acceso directo si el dato está allí.<br>
+                - Nivel 2: primero se transfiere al nivel 1 y luego se accede.<br>
+                - Si la tasa de aciertos (A) en nivel 1 es 95%, el tiempo medio de acceso se calcula como:<br>
+                Tiempo medio = (0.95)(0.1 us) + (0.05)(0.1 us + 1 us) = 0.15 us.<br>
+
+                A mayor tasa de aciertos → mejor rendimiento.<br><br>
+
+                <strong>• Principio de proximidad de referencias:</strong><br>
+                Durante la ejecución normal de un programa, las referencias del procesador, tanto a instrucciones como a datos, tienden a agruparse en estructuras for, if, while entre otras.  
+                <br><br>
+                Los programas hacen referencias repetidas a un pequeño conjunto de instrucciones en estructuras for, if, while entre otras.
+                <br><br>
+                En periodos cortos, el procesador está trabajando principalmente con grupos fijos de referencias en memoria en estructuras for, if, while entre otras.
+                <br><br>
+            </p>
+
+            <div style="margin-bottom: 25px;"></div>
+
+            <div class="imagen-centro">
+                <img src="hola8.png" width="1000" height="700" alt="Jerarquía de memorias en un sistema de cómputo">
+            </div>
+            <div style="margin-bottom: 200px;"></div>
+        </div>
+    </article>
+</section>
+
+
+
+<SECTION6>
+    <ARTICLE6>
+        <div class="contenedor">
+        <p class="text1">Agradezco tu visita y el interés por aprender más sobre el funcionamiento interno de los sistemas de cómputo. Mi objetivo es ofrecer información clara y accesible que contribuya y desarrolle tus conocimientos tecnológicos.<br>  </p>
+    </div> 
+        <div class="contenedor">
+        <p class="text1">Te invito a seguir explorando, investigando y construyendo tu propio camino dentro del mundo de la computación. ¡El aprendizaje nunca termina!</p>
+        </div>
+
+
+<div style="margin-top: 100px;"></div>
+    <div style="text-align: center;">
+    <FOOTER>Autor:<br>
+Reynaldo Josué Soto Sainz<br>
+<div style="margin-top: 25px;"></div>
+    <p class="text5">Copyright © 2025 – México</p>
+</div>
+</FOOTER>
+
+</body>
+</html>
